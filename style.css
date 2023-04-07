@@ -2,11 +2,19 @@
     position: fixed;
     top:0;
     left:0;
-    height:10%;
+    height:5%;
     width: 100%;
-    border: 1px green solid;
+
 }
 
 #navbar ul{
     list-style-type: none;
+    display:flex;
+    justify-content: center;
+
+}
+
+#navbar ul li {
+    display:inline;
+    padding:5px;
 }
