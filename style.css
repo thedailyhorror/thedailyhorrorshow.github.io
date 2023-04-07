@@ -1,0 +1,12 @@
+#navbar{
+    position: fixed;
+    top:0;
+    left:0;
+    height:10%;
+    width: 100%;
+    border: 1px green solid;
+}
+
+#navbar ul{
+    list-style-type: none;
+}
