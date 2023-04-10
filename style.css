@@ -13,7 +13,7 @@ nav {
   font-family: 'Open Sans', sans-serif;
   display: flex;
   justify-content: space-between;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 10px;
   z-index: 1;
   margin: 20px; /* Äußerer Abstand */}
