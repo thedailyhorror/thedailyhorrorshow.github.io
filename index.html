@@ -22,22 +22,25 @@
 
         </nav>
         <script>
-  const nav = document.querySelector('nav');
+const nav = document.querySelector('nav');
 let navPosition = nav.offsetTop;
+let navHeight = nav.offsetHeight;
 
 window.addEventListener('scroll', function() {
   if (window.pageYOffset > navPosition) {
     nav.classList.add('fixed-nav');
+    document.body.style.paddingTop = navHeight + 'px';
   } else {
     nav.classList.remove('fixed-nav');
+    document.body.style.paddingTop = 0;
   }
 });
 
-nav.addEventListener('mouseover', function() {
+nav.addEventListener('mouseenter', function() {
   nav.classList.add('hover-nav');
 });
 
-nav.addEventListener('mouseout', function() {
+nav.addEventListener('mouseleave', function() {
   nav.classList.remove('hover-nav');
 });
         </script>
