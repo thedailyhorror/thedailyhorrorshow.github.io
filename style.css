@@ -5,14 +5,18 @@ html, body {
 
 nav {
   position: fixed;
-  top: 0;
-  width: 100%;
+  top: 20px;
+  left: 20px;
+  right: 20px;
   background-color: #333;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
-  display: flex; /* Flexbox-Layout */
-  justify-content: space-between; /* Links zentrieren und Platzhalter links/rechts */
-}
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 1;
+  margin: 20px; /* Äußerer Abstand */}
 
 nav ul {
   display: flex;
