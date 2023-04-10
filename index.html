@@ -22,14 +22,23 @@
 
         </nav>
         <script>
-            const nav = document.querySelector('nav');
+  const nav = document.querySelector('nav');
+let navPosition = nav.offsetTop;
 
-nav.addEventListener('mouseover', () => {
-  nav.style.top = 0;
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset > navPosition) {
+    nav.classList.add('fixed-nav');
+  } else {
+    nav.classList.remove('fixed-nav');
+  }
 });
 
-nav.addEventListener('mouseout', () => {
-  nav.style.top = '-100px';
+nav.addEventListener('mouseover', function() {
+  nav.classList.add('hover-nav');
+});
+
+nav.addEventListener('mouseout', function() {
+  nav.classList.remove('hover-nav');
 });
         </script>
 </body>
