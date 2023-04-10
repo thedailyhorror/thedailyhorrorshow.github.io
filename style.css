@@ -1,37 +1,43 @@
 html, body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin: 0;
-  }
-  
-  nav ul li a {
-    display: block;
-    padding: 20px;
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  nav ul li a:hover {
-    background-color: #666;
-  }
+  margin: 0;
+  padding: 0;
+}
 
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  display: flex; /* Flexbox-Layout */
+  justify-content: space-between; /* Links zentrieren und Platzhalter links/rechts */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1; /* Flex-Verhältnis, um Platzhalter gleichmäßig zu verteilen */
+  justify-content: space-between; /* Links zentrieren und Platzhalter links/rechts */
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: #666;
+}
+
+.placeholder {
+  width: 10%; /* Breite der Platzhalter */
+}
