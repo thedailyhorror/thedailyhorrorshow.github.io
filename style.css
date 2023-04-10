@@ -34,3 +34,7 @@ html, body {
   nav ul li a:hover {
     background-color: #666;
   }
+
+  .placeholderNav {
+    width: 20%;
+  }
