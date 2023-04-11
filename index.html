@@ -11,7 +11,7 @@
 <body>
     <nav>
      <div class="placeholder"></div>
-        <ul>
+        <ul id="Navbar">
             <li><a href="#">Home</a></li>
             <li><a href="#">About Me</a></li>
             <li><a href="#">References</a></li>
@@ -22,7 +22,15 @@
 
         </nav>
         <script>
+var element = document.getElementById("Navbar");
 
+element.addEventListener("mouseover", function() {
+  element.style.display = "block";
+});
+
+element.addEventListener("mouseout", function() {
+  element.style.display = "none";
+});
         </script>
 </body>
 </html>
