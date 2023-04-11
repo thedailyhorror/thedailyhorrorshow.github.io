@@ -22,14 +22,20 @@
 
         </nav>
         <script>
-var element = document.getElementById("Navbar");
+var navbar = document.getElementById("Navbar");
+var placeholder1 = document.getElementsByClassName("placeholder")[0];
+var placeholder2 = document.getElementsByClassName("placeholder")[1];
 
-element.addEventListener("mouseover", function() {
-  element.style.display = "flex";
+navbar.addEventListener("mouseover", function() {
+  placeholder1.style.display = "none";
+  placeholder2.style.display = "none";
+  navbar.style.display = "flex";
 });
 
-element.addEventListener("mouseout", function() {
-  element.style.display = "none";
+navbar.addEventListener("mouseout", function() {
+  navbar.style.display = "none";
+  placeholder1.style.display = "block";
+  placeholder2.style.display = "block";
 });
         </script>
 </body>
