@@ -42,3 +42,9 @@ nav ul li a:hover {
   background-color: #666;
 }
 
+#content{
+  left: 5%;
+  right: 5%;
+  border: 1px solid greenyellow;
+
+}
